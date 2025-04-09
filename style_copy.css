@@ -13,7 +13,56 @@ Text Domain: twentyeleven
 
 /* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
 -------------------------------------------------------------- */
+/*
+==============
+NEW FONT START
+*/
 @font-face {
+    font-family: 'HelveticaLTStdRoman';
+    src: url('./assets/fonts/Helvetica-LT-Std-Roman/Helvetica-LT-Std-Roman.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'MisoRegular';
+    src: url('./assets/fonts/miso-regular/miso-regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('./assets/fonts/OpenSans/OpenSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('./assets/fonts/OpenSans/OpenSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OpenSansSemibold';
+    src: url('./assets/fonts/OpenSans/OpenSans-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('./assets/fonts/OpenSans/OpenSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+/* 
+============
+NEW FONT END
+============
+*/
+
+/* @font-face {
     font-family: 'MisoRegular';
     src: url('type/miso-regular-webfont.eot');
     src: url('type/miso-regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -23,15 +72,15 @@ Text Domain: twentyeleven
     font-weight: normal;
     font-style: normal;
 
-}
-@font-face {
+} */
+/* @font-face {
     font-family: 'OpenSansBold';
     src: url('type/OpenSans-Bold-webfont.eot');
     src: url('type/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),  url('type/OpenSans-Bold-webfont.woff') format('woff'),  url('type/OpenSans-Bold-webfont.ttf') format('truetype'),  url('type/OpenSans-Bold-webfont.svg#OpenSansBold') format('svg');
     font-weight: normal;
     font-style: normal;
-}
-@font-face {
+} */
+/* @font-face {
     font-family: 'OpenSansRegular';
     src: url('type/OpenSans-Regular-webfont.eot');
     src: url('type/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -41,9 +90,9 @@ Text Domain: twentyeleven
     font-weight: normal;
     font-style: normal;
 
-}
+} */
 
-@font-face {
+/* @font-face {
     font-family: 'OpenSansLight';
     src: url('type/OpenSans-Light-webfont.eot');
     src: url('type/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
@@ -53,9 +102,9 @@ Text Domain: twentyeleven
     font-weight: normal;
     font-style: normal;
 
-}
+} */
 
-@font-face {
+/* @font-face {
     font-family: 'OpenSansSemibold';
     src: url('type/OpenSans-Semibold-webfont.eot');
     src: url('type/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
@@ -65,15 +114,15 @@ Text Domain: twentyeleven
     font-weight: normal;
     font-style: normal;
 
-}
+} */
 
-@font-face {
+/* @font-face {
     font-family: 'HelveticaLTStdRoman';
     src: url('type/helveticaltstd-roman_2-webfont.eot');
     src: url('type/helveticaltstd-roman_2-webfont.eot?#iefix') format('embedded-opentype'), url('type/helveticaltstd-roman_2-webfont.woff') format('woff'), url('type/helveticaltstd-roman_2-webfont.ttf') format('truetype'), url('type/helveticaltstd-roman_2-webfont.svg#HelveticaLTStdRoman') format('svg');
     font-weight: normal;
     font-style: normal;
-}
+} */
 table {/* tables still need 'cellspacing="0"' in the markup */
 	border-collapse: separate;
 	border-spacing: 0;
@@ -377,10 +426,9 @@ hr {
 
 /* Text elements */
 p {
+	margin-bottom: 1.625em; 
+	text-align:justify;
 	color:#3A3A3A;
-	width: 100%;
-	font-size: 12px;
-	margin: 0.5rem;
 }
 ul, ol {
 	margin: 0px;
@@ -618,8 +666,7 @@ a:hover {
 	
 	display: block;
 	float:right;
-	/* width:600px; */
-	margin-top: 1rem;
+	width:600px;
 
 	
 }
@@ -1844,9 +1891,6 @@ section.recent-posts .other-recent-posts li:after {
     text-transform:uppercase;
 }
 .textwidget {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
     height:auto;
 	width:100%;
     float:left;
@@ -1855,7 +1899,6 @@ section.recent-posts .other-recent-posts li:after {
     line-height:22px;
     margin:5px 0 0 0;
     text-align:justify;
-	padding: 1rem;
 }
 .textwidget a {
 	width:auto;
@@ -1871,7 +1914,7 @@ section.recent-posts .other-recent-posts li:after {
 
 .textwidget a.viewgallery { float:right; width:100%; text-align:right; margin-top:-45px; margin-right:0px;}
 .textwidget p.testi {
-	    	/* width:260px; */
+	    	width:260px;
         height:auto;
         float:left;
         background:#212121;
@@ -2513,7 +2556,6 @@ p.comment-form-comment {
 #supplementary {
 	overflow: hidden;
 	padding-top:53px;
-	margin: auto;
 }
 
 /* Two Footer Widget Areas */
@@ -2527,67 +2569,17 @@ p.comment-form-comment {
 }
 
 /* Three Footer Widget Areas */
-#supplementary.three {
-	/* width:960px; */
-    width: 100%;
+/* #supplementary.three {
+	width:960px;
 	margin:0px auto;
-	/* height:100%; */
-}
+	height:300px;
+} */
 
-#supplementary #second { margin:0px 21px;}
-#supplementary.three .widget-area {
-	float: left;
-	margin:0px;
-	width:306px;
-}
-#supplementary.three .widget-area + .widget-area + .widget-area {
-	margin-right: 0;
-}
-
-/* Site Generator Line */
-#site-generator {
-	background: #f9f9f9;
-	border-top: 1px solid #ddd;
-	color: #666;
-	font-size: 12px;
-	line-height: 2.2em;
-	padding: 2.2em 0.5em;
-	text-align: center;
-}
-#site-generator a {
-	color: #555;
-	font-weight: bold;
-}
 
 
 /* =Responsive Structure
 ----------------------------------------------- */
-@media (min-width: 991px) {
-	#supplementary.three {
-		display: flex;
-		justify-content: center;
-	}
-	#supplementary.three .widget-area {
-		width: 306px;
-		margin: 0 21px;
-	}
-}
-@media (max-width: 800px) {
-	.ngg-widget {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-	}
-	#supplementary.three {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-	#supplementary.three .widget-area {
-		width: 100%;
-		margin: 0;
-	}
-}
+
 @media (max-width: 800px) {
 	/* Simplify the basic layout */
 	#main #content {
