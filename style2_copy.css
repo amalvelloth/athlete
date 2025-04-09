@@ -1,16 +1,74 @@
+
+
+
 @charset "utf-8";
 /* CSS Document */
 
 /* new changes */
+@font-face {
+    font-family: 'HelveticaLTStdRoman';
+    src: url('./assets/fonts/Helvetica-LT-Std-Roman/Helvetica-LT-Std-Roman.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'MisoRegular';
+    src: url('./assets/fonts/miso-regular/miso-regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('./assets/fonts/OpenSans/OpenSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('./assets/fonts/OpenSans/OpenSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OpenSansSemibold';
+    src: url('./assets/fonts/OpenSans/OpenSans-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('./assets/fonts/OpenSans/OpenSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
 
 #wrap {
     display: none;
 }
 #banner_cont {
-    display: none;
+    display: block;
 }
 
-
+#profile .description {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.description-wrap{
+    width: 100%;
+    padding: 1rem;
+}
+@media (min-width: 991px) {
+    .description-wrap {
+        padding: 0 5rem;
+    }
+}
 
 
 
@@ -477,7 +535,7 @@ article.cercle_red p{
 	width:100%;
 	margin-bottom:15px;
 	color:#282828;
-    margin: 1rem;
+    /* margin: 1rem; */
 }
 
 
@@ -894,7 +952,6 @@ section#h_contact p{
     font:11px OpenSansRegular, Arial, sans-serif;
     background:url(images/cnt_icon.png) no-repeat left top;
     padding:0 0 5px 25px;
-    margin:13px 0 0 15px;
 	float:left;
 }
 
