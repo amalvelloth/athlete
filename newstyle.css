@@ -1,0 +1,214 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+
+/* Header */
+.achive_head {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 999;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#branding hgroup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#logopart h1 {
+    font-size: 2rem;
+    color: #292929;
+}
+
+#site-description {
+    font-size: 1rem;
+    color: #757575;
+}
+
+.menu-toggle {
+    display: none;
+    background: #e13131;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#menu-topmenu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu-topmenu li {
+    margin: 0 10px;
+}
+
+#menu-topmenu a {
+    color: #292929;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#menu-topmenu a:hover {
+    color: #e13131;
+}
+
+/* Awards Section */
+#awards_part {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.awards {
+    text-align: center;
+    padding: 15px;
+}
+
+.awards h1 {
+    font-size: 1.5rem;
+    color: #292929;
+}
+
+.awards p {
+    font-size: 1rem;
+    color: #5b5b5b;
+}
+
+.awards img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Profile Section */
+#wrap.ss-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.ss-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ss-left, .ss-right {
+    flex: 1;
+    max-width: 100%;
+    text-align: center;
+}
+
+/* Footer */
+#colophon {
+    background: #fff;
+    color: #a1a1a1;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#h_contact {
+    background: #1d1d1d;
+    padding: 20px 0;
+}
+
+#h_cnt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-topmenu-container {
+        display: none;
+        width: 100%;
+    }
+
+    .menu-topmenu-container.active {
+        display: block;
+    }
+
+    #menu-topmenu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #menu-topmenu li {
+        margin: 10px 0;
+    }
+
+    #h_cnt {
+        flex-direction: column;
+    }
+
+    .cnt_adrs, .flw_part {
+        flex: 1 1 100%;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    #logopart h1 {
+        font-size: 1.5rem;
+    }
+
+    #site-description {
+        font-size: 0.9rem;
+    }
+
+    .awards h1 {
+        font-size: 1.2rem;
+    }
+
+    .awards p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .ss-left, .ss-right {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+
+    .ss-left {
+        text-align: right;
+    }
+
+    .ss-right {
+        text-align: left;
+    }
+}

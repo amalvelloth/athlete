@@ -1,0 +1,50 @@
+			
+			$(document).ready(function() {
+				
+				$('.menu li a').click(function() {
+					
+					
+					$('.menu li').removeClass('selected');
+					$(this).parent('li').addClass('selected');
+					
+					thisItem 	= $(this).attr('rel');
+					
+					if(thisItem != "all") {
+					
+						$('.item li[rel='+thisItem+']').stop()
+																.animate({'width' : '220px', 
+																			 'opacity' : 1, 
+																			 'height' : '190px', 
+																			 'marginRight' : '.5em', 
+																			 'marginLeft' : '.5em'
+																			});
+																			
+						$('.item li[rel!='+thisItem+']').stop()
+																.animate({'width' : 0, 
+																			 'opacity' : 0,
+																			 'marginRight' : 0, 
+																			 'height' : 0, 
+																			 'marginLeft' : 0
+																			});
+						
+					} else {
+						
+						$('.item li').stop()
+										.animate({'opacity' : 1, 
+													 'width' : '220px', 
+													 'height' : '190px',  
+													 'marginRight' : '.5em', 
+													 'marginLeft' : '.5em'
+													});
+					}
+				})
+				
+				$('.item li img').animate({'opacity' : 1}).hover(function() {
+					$(this).animate({'opacity' : 1});
+				}, function() {
+					$(this).animate({'opacity' : 1});
+				});
+				
+			});
+			
+	
