@@ -249,6 +249,10 @@ body {
     text-align: center;
 }
 
+#main {
+	width: 100% !important;
+}
+
 /* Footer */
 #colophon {
     background: #fff;
@@ -325,6 +329,17 @@ body {
     .awards p {
         font-size: 0.9rem;
     }
+}
+
+@media (max-width: 991px) {
+	article.abt_main h1, article.abt_main h2, article.abt_main p, article.awd_main p {
+		width: 70% !important;
+	}
+}
+@media (max-width: 480px) {
+	article.abt_main h1, article.abt_main h2, article.abt_main p, article.awd_main p {
+		width: 100% !important;
+	}
 }
 
 @media (min-width: 769px) {

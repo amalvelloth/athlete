@@ -456,6 +456,17 @@ section#profile article.cmarg {
   margin-left: 0px;
 }
 
+@media (max-width : 480px) {
+  section#banner_cont article.banner_strip {
+    bottom: 0px;
+    top: unset;
+  }
+  section#banner_cont {
+    height: 900px;
+  }
+}
+
+
 /*section#profile article.cercle:hover {
     background:url(images/cercle_ho.png) no-repeat;
 }
