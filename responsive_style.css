@@ -274,9 +274,21 @@ body {
     gap: 20px;
 }
 
+.widget-title, .widget a, .textwidget a .textwidget .test_dtls h2, .textwidget a.viewgallery {
+	color: black !important;
+}
+
+.singular.page .hentry {
+	width: 100% !important;
+}
+aside.cont_form ul li textarea {
+	width: 100% !important;
+}
+
 
 
 /* Media Queries */
+
 @media (max-width: 768px) {
 	
     .menu-toggle {
@@ -2897,7 +2909,7 @@ p.comment-form-comment {
 @media (max-width: 800px) {
 	/* Simplify the basic layout */
 	#main #content {
-		margin: 0 7.6%;
+		padding: 0 1rem;
 		width: auto;
 	}
 	#nav-below {

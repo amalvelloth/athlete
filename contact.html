@@ -13,8 +13,8 @@
 	<title>contact | Joby Mathew | Arm Wresting World Champion | Arm Wrestler | Arm Wrestling Champion</title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<!-- <link rel="stylesheet" type="text/css" media="all" href="style.css"> -->
-	<link rel="stylesheet" type="text/css" media="all" href="newstylemain.css">
-	<link rel="stylesheet" type="text/css" media="all" href="newstyle.css">
+	<link rel="stylesheet" type="text/css" media="all" href="responsive_style.css">
+	<link rel="stylesheet" type="text/css" media="all" href="responsive_style2.css">
 	<!-- Internet Explorer HTML5 enabling code: -->
 	<!--[if IE]>
        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -26,7 +26,6 @@
        }
        </style>      
 <![endif]-->
-	<link rel="stylesheet" type="text/css" media="all" href="./contact_files/style2.css">
 	<link rel="stylesheet" href="./contact_files/prettyPhoto.css" type="text/css" media="screen" charset="utf-8">
 
 	<link rel="pingback" href="http://www.jobymathew.in/xmlrpc.php">
@@ -135,7 +134,7 @@
 	class="page page-id-19 page-template page-template-contact-page-php single-author singular two-column right-sidebar"
 	onload="initialize()">
 	<div id="page" class="hfeed">
-		<header id="branding" role="banner">
+		<!--<header id="branding" role="banner">
 			<hgroup>
 				<article id="logopart">
 					<a href="./index.html" title="Joby Mathew" rel="home">
@@ -169,20 +168,36 @@
 									href="./contact.html">contact</a></li>
 						</ul>
 					</div>
-				</nav><!-- #access -->
+				</nav> #access
 
 			</hgroup>
+		</header> #branding -->
 
-
-
-
-		</header><!-- #branding -->
+		<header id="branding" class="achive_head"> <!-- #Menu added-->
+			<div class="container">
+				<div id="logopart">
+					<a href="/" title="Joby Mathew" rel="home">
+						<h1 id="site-title">Joby Mathew</h1>
+					</a>
+					<h2 id="site-description">International Sportsman</h2>
+				</div>
+				<nav id="access">
+					<button class="menu-toggle">Menu</button>
+					<div class="menu-topmenu-container">
+						<ul id="menu-topmenu" class="menu">
+							<li><a href="/bio.html">bio.</a></li>
+							<li><a href="/achievements.html">achievements.</a></li>
+							<li><a href="/awards.html">awards.</a></li>
+							<li><a href="/media.html">media.</a></li>
+							<li><a href="/contact.html">contact</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header> <!-- #Menu end-->
 		<div id="main">
 			<div id="primary">
 				<div id="content" role="main">
-
-
-
 					<article id="post-19" class="post-19 page type-page status-publish hentry">
 						<header class="entry-header">
 							<h1 class="entry-title">contact</h1>
@@ -261,9 +276,6 @@
 
 					<div id="comments">
 
-
-
-
 					</div><!-- #comments -->
 
 
@@ -273,8 +285,6 @@
 
 		</div><!-- #main -->
 		<footer id="colophon" role="contentinfo">
-
-
 			<div id="supplementary" class="three">
 				<div id="first" class="widget-area" role="complementary">
 					<aside id="text-2" class="widget widget_text">
@@ -352,9 +362,6 @@
 			<!--	<div id="site-generator">
 								<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform" rel="generator">Proudly powered by WordPress</a>
 			</div>-->
-
-
-
 			<section id="h_contact">
 				<article id="h_cnt">
 					<article class="cnt_adrs">
@@ -375,22 +382,26 @@
 										src="/images/instagram.png" title="JOBY INSTA" width="24" height="24"><span>Joby
 										mathew On Instagram </span></a></li>
 							<!--<li><a href="#"><img src="/images/youtube.png" width="24" height="24"></a></li>
-        <li><a href="#"><img src="/images/blog.png" width="24" height="24"></a></li>-->
+                            <li><a href="#"><img src="/images/blog.png" width="24" height="24"></a></li>-->
 						</ul>
 					</article>
 				</article>
 			</section>
 
-			<article class="footer_part">
-				<p> ©joby mathew 2025. ALL RIGHTS RESERVED<!-- <a href="#">terms of use | privacy policy</a>--></p>
-			</article>
-
-
-
-
+			
 
 		</footer><!-- #colophon -->
+		<article class="footer_part">
+			<p> ©joby mathew 2025. ALL RIGHTS RESERVED<!-- <a href="#">terms of use | privacy policy</a>--></p>
+		</article>
 	</div><!-- #page -->
+
+	<script>
+		document.querySelector('.menu-toggle').addEventListener('click', () => {
+			document.querySelector('.menu-topmenu-container').classList.toggle('active');
+		});
+	</script>
+
 	<script type="text/javascript">
 		var sc_project = 9082620;
 		var sc_invisible = 1;

@@ -12,7 +12,8 @@
 	<meta name="viewport" content="width=device-width">
 	<title>awards | Joby Mathew | Arm Wresting World Champion | Arm Wrestler | Arm Wrestling Champion</title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="stylesheet" type="text/css" media="all" href="style.css">
+	<link rel="stylesheet" type="text/css" media="all" href="responsive_style.css">
+	<link rel="stylesheet" type="text/css" media="all" href="responsive_style2.css">
 	<!-- Internet Explorer HTML5 enabling code: -->
 	<!--[if IE]>
        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -24,7 +25,6 @@
        }
        </style>      
 <![endif]-->
-	<link rel="stylesheet" type="text/css" media="all" href="./awards_files/style2.css">
 	<link rel="stylesheet" href="./awards_files/prettyPhoto.css" type="text/css" media="screen" charset="utf-8">
 
 	<link rel="pingback" href="http://www.jobymathew.in/xmlrpc.php">
@@ -76,7 +76,7 @@
 <body
 	class="page page-id-322 page-template page-template-awards_list-php single-author singular two-column right-sidebar">
 	<div id="page" class="hfeed">
-		<header id="branding" role="banner">
+		<!--<header id="branding" role="banner">
 			<hgroup>
 				<article id="logopart">
 					<a href="./index.html" title="Joby Mathew" rel="home">
@@ -110,14 +110,33 @@
 									href="./contact.html">contact</a></li>
 						</ul>
 					</div>
-				</nav><!-- #access -->
+				</nav> #access
 
 			</hgroup>
-
-
-
-
-		</header><!-- #branding -->
+		</header> #branding -->
+		
+		<header id="branding" class="achive_head"> <!-- #Menu added-->
+			<div class="container">
+				<div id="logopart">
+					<a href="/" title="Joby Mathew" rel="home">
+						<h1 id="site-title">Joby Mathew</h1>
+					</a>
+					<h2 id="site-description">International Sportsman</h2>
+				</div>
+				<nav id="access">
+					<button class="menu-toggle">Menu</button>
+					<div class="menu-topmenu-container">
+						<ul id="menu-topmenu" class="menu">
+							<li><a href="/bio.html">bio.</a></li>
+							<li><a href="/achievements.html">achievements.</a></li>
+							<li><a href="/awards.html">awards.</a></li>
+							<li><a href="/media.html">media.</a></li>
+							<li><a href="/contact.html">contact</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header> <!-- #Menu end-->
 		<section id="award_part">
 			<article class="awd_main">
 
@@ -468,6 +487,11 @@
 
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
+	<script>
+		document.querySelector('.menu-toggle').addEventListener('click', () => {
+			document.querySelector('.menu-topmenu-container').classList.toggle('active');
+		});
+	</script>
 	<script type="text/javascript">
 		var sc_project = 9082620;
 		var sc_invisible = 1;
