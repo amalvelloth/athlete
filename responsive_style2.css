@@ -64,7 +64,8 @@ section#contact aside.cont_form {
 section#contact aside.cont_dtls {
   margin: 0 !important;
 }
-section#contact h1 {      /*here*/
+section#contact h1 {
+  /*here*/
   width: 100px !important;
 }
 section#contact aside.cont_dtls p.cnt_text {
@@ -77,7 +78,6 @@ section#contact aside.cont_dtls h4 {
 section#contact {
   margin: 2rem auto;
   max-width: 960px;
-  padding: 1rem;
 }
 #map_canvas {
   width: 100% !important;
@@ -87,19 +87,74 @@ section#contact {
 .contact-form input[type="text"] {
   width: 100% !important;
 }
+.awards h2 {
+  font-weight: 900 !important;
+}
+section#about_part {
+  padding: 1rem;
+}
+article.abt_main p,
+article.awd_main p {
+  text-align: left !important;
+}
+article.abt_main h2 {
+  height: unset !important;
+  padding: 10px !important;
+  text-align: left !important;
+}
+aside.cont_form ul {
+  float: none !important;
+  margin: auto !important;
+}
+.pushbutton-wide {
+  margin: auto !important;
+}
+aside.cont_form ul {
+  width: 100% !important;
+}
+aside.cont_form ul li {
+  width: 100% !important;
+}
+.contact-form input[type='text'] {
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+.contact-form input[type="text"] {
+  width: 100px !important;
+}
+section#contact {
+  overflow: hidden !important;
+}
+article.awd_main h1 {
+	max-width: 600px;
+}
 
 @media (max-width: 480px) {
+  section#banner_cont .awards h2.h11 {
+    top: 450px;
+  }
+  section#banner_cont .awrd2 h2.h08 {
+    bottom: unset !important;
+    bottom: -14px !important;
+  }
+  section#banner_cont .awrd6 {
+    bottom: 203px !important;
+  }
+  section#banner_cont article.banner_strip {
+    height: 60px !important;
+  }
+  section#banner_cont .awrd2 {
+    left: unset !important;
+    right: unset !important;
+    left: 12% !important;
+  }
   section#banner_cont .awrd5 {
     right: 0% !important;
     /* transform: translateX(110%) !important; */
     z-index: 1 !important;
   }
-  section#banner_cont .awards h2.h11 {
-    display: block;
-    z-index: 9999;
-  }
   section#banner_cont .awrd6 {
-    left: unset ;
+    left: unset;
     left: 45% !important;
   }
   section#banner_cont .awrd6 {
@@ -109,13 +164,22 @@ section#contact {
   section#banner_cont .banner_img {
     background: url(images/joby_photo.png) no-repeat !important;
     background-size: 170px auto !important;
-    /* background-repeat: no-repeat; */
     background-position: center !important;
   }
-
+  section#banner_cont .awds_btm1 {
+    bottom: 178px !important;
+  }
+  section#banner_cont .awards h2.h10 {
+    top: unset !important;
+    top: 330px !important;
+  }
+  section#banner_cont .awrd2 {
+    left: unset !important;
+    left: 11% !important;
+  }
 }
 @media (max-width: 768px) {
-  section#contact {
+  section#banner_cont section#contact {
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -138,9 +202,10 @@ section#contact {
   #map_canvas {
     height: 300px !important;
   }
+  section#award_part article.awd_main {
+    padding: 1rem !important;
+  }
 }
-
-
 
 @media (max-width: 466px) {
   article.flw_part li a {
@@ -176,7 +241,6 @@ section#contact {
 }
 
 @media (max-width: 768px) {
- 
   .map {
     width: 100% !important;
   }
@@ -242,6 +306,9 @@ section#contact {
   .bg-img {
     width: 100% !important;
   }
+  section#banner_cont .awrd2 {
+    left: 13% !important;
+  }
   section#banner_cont .awrd3 {
     top: unset !important;
     top: 10px !important;
@@ -279,9 +346,8 @@ section#contact {
     bottom: 150px;
     left: 37% !important;
     width: 120px !important;
-  }q
-  
-  section#banner_cont .awrd3 {
+  }
+  q section#banner_cont .awrd3 {
     bottom: unset !important;
     bottom: -100px !important;
   }
@@ -297,7 +363,7 @@ section#contact {
   section#banner_cont .awrd4 {
     top: unset !important;
     right: unset !important;
-    bottom: 20px !important;
+    bottom: -10px !important;
     padding: 10px !important;
     right: 27% !important;
     width: 30% !important;
@@ -323,19 +389,24 @@ section#contact {
     bottom: 190px !important;
   }
 
-  section#banner_cont .awards h2.h08 {
+  section#banner_cont .awrd6 h2.h08 {
     bottom: -128px !important;
     font-size: 17px !important;
   }
+  section#banner_cont .awards h2.h08 {
+    bottom: -124px !important;
+    font-size: 17px !important;
+  }
+
   section#banner_cont .awards h2.h11 {
     bottom: -477px !important;
     font-size: 17px !important;
   }
   section#banner_cont .awards h2.h12 {
     font-size: 17px !important;
-    bottom: -9px !important;
-}
-  
+    bottom: 21px !important;
+  }
+
   section#banner_cont .awds_btm2 {
     position: absolute;
     top: unset !important;
@@ -362,7 +433,6 @@ section#contact {
   .pushbutton-wide {
     width: 100% !important;
   }
-  
 }
 
 @media (min-width: 991px) {
@@ -371,7 +441,6 @@ section#contact {
     margin: auto;
   }
 }
-
 
 /* new changes end_____ */
 
