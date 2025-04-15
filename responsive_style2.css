@@ -96,17 +96,15 @@ section#about_part {
 article.abt_main p,
 article.awd_main p {
   text-align: left !important;
+  padding: 25px 0 25px 0 !important;
 }
 article.abt_main h2 {
   height: unset !important;
-  padding: 10px !important;
+  padding: 2px 10px !important;
   text-align: left !important;
 }
 aside.cont_form ul {
   float: none !important;
-  margin: auto !important;
-}
-.pushbutton-wide {
   margin: auto !important;
 }
 aside.cont_form ul {
@@ -115,7 +113,7 @@ aside.cont_form ul {
 aside.cont_form ul li {
   width: 100% !important;
 }
-.contact-form input[type='text'] {
+.contact-form input[type="text"] {
   width: 100% !important;
   margin: 0 auto !important;
 }
@@ -126,10 +124,70 @@ section#contact {
   overflow: hidden !important;
 }
 article.awd_main h1 {
-	max-width: 600px;
+  max-width: 600px;
+}
+section#h_contact article.cnt_adrs {
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
+section#h_contact p {
+  padding: 8px 0 !important;
+}
+section#h_contact h2 {
+  margin: unset !important;
+  margin-top: 14px !important;
+}
+article.flw_part li a {
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-bottom: 8px !important;
+  padding-left: 0 !important;
+}
+.ngg-widget img {
+  margin: 0 !important;
+}
+article.abt_main h1 {
+  font-weight: 200 !important;
+}
+article.abt_main h2 {
+  font-weight: 900 !important;
+}
+.footer_part {
+  padding: unset !important;
+  padding: 10px 16px !important;
+  max-width: 950px !important;
+}
+aside.cont_form ul li label {
+  width: 100% !important;
+}
+form.contact-form input[type="text"] {
+  width: 100% !important;
+}
+aside.cont_form ul li textarea {
+  padding: 0 !important;
+}
+.pushbutton-wide {
+  display: flex !important;
+  margin: auto !important;
+  margin-top: 1.5rem !important;
+}
+.pushbutton-wide {
+  float: none !important;
+}
+aside.cont_form ul li textarea {
+  margin-bottom: 1.5rem !important;
 }
 
+@media (max-width: 467px) {
+  img[class*="align"], img[class*="wp-image-"], #content .gallery .gallery-icon img {
+    float: right !important;
+  }
+}
 @media (max-width: 480px) {
+  body .contact-form input[type="text"] {
+    width: unset;
+    width: 100% !important;
+  }
   section#banner_cont .awards h2.h11 {
     top: 450px;
   }
@@ -179,6 +237,9 @@ article.awd_main h1 {
   }
 }
 @media (max-width: 768px) {
+  section#contact aside.cont_form {
+    border:  none !important;
+  }
   section#banner_cont section#contact {
     display: flex;
     flex-direction: column;
@@ -205,6 +266,11 @@ article.awd_main h1 {
   section#award_part article.awd_main {
     padding: 1rem !important;
   }
+  .cboxElement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (max-width: 466px) {
@@ -229,7 +295,11 @@ article.awd_main h1 {
     gap: 1rem;
   }
 }
-
+@media (min-width: 768px) {
+  .pushbutton-wide {
+    margin-top: 1.5rem !important;
+  }
+}
 @media (max-width: 768px) {
   section#banner_cont {
     height: 800px !important;
@@ -427,11 +497,13 @@ article.awd_main h1 {
   .contact-form input[type="text"] {
     width: unset !important;
   }
-  aside.cont_form ul li textarea {
-    display: none !important;
-  }
   .pushbutton-wide {
     width: 100% !important;
+  }
+}
+@media (min-width: 769px) {
+  section#about_part {
+      padding: 2rem !important;
   }
 }
 
@@ -439,6 +511,12 @@ article.awd_main h1 {
   .description-wrap {
     max-width: 982px;
     margin: auto;
+  }
+  section#contact aside.cont_form {
+    padding: 2rem !important;
+  }
+  section#contact aside.cont_dtls {
+    padding: 2rem !important;
   }
 }
 
