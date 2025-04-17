@@ -258,7 +258,8 @@ body {
 }
 
 #main {
-  width: 100% !important;
+  width: unset !important;
+  max-width: 1200px !important;
 }
 
 /* Footer */
@@ -309,8 +310,8 @@ article.awd_main h2 {
   text-align: start !important;
 }
 .tabbed_content {
-	max-width: 1200px !important;
-	margin:  auto !important;
+  max-width: 1200px !important;
+  margin: auto !important;
 }
 #logopart {
   width: 100% !important;
@@ -332,17 +333,44 @@ article.awd_main h2 {
 #access li {
   margin-top: 0 !important;
 }
+.entry-content p {
+  margin-bottom: 1.5rem;
+}
+section#h_contact article#h_cnt {
+  max-width: 1200px !important;
+}
+#supplementary.three {
+  max-width: 1200px !important;
+}
+.tabbed_content .slide_content {
+  margin: auto !important;
+}
+.textwidget p.testi {
+  margin-top: 0 !important;
+}
 
 
 /* Add to responsive_style.css */
+@media (min-width: 1024px) {
+  #supplementary.three .widget-area {
+    width: 100% !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  #supplementary.three {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+}
 @media (max-width: 768px) {
-	/* .singular.page .hentry {
+  /* .singular.page .hentry {
 		padding: 1rem !important;
 	} */
-	article.awd_main h2 {
-		width: 100% !important;
-		padding: 1rem;
-	}
+  article.awd_main h2 {
+    width: 100% !important;
+    padding: 1rem;
+  }
   .tabbed_content {
     width: 100%;
     overflow-x: auto;
@@ -419,7 +447,7 @@ article.awd_main h2 {
     padding-top: 16px;
     font-size: 12px;
     text-align: end;
-}
+  }
 
   #h_cnt {
     flex-direction: column;
@@ -429,6 +457,13 @@ article.awd_main h2 {
   .flw_part {
     flex: 1 1 100%;
     margin: 20px 0;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .widget-title {
+    width: unset !important;
     width: 100% !important;
   }
 }
@@ -468,13 +503,18 @@ article.awd_main h2 {
   }
 }
 
+@media (min-width: 769px) and (max-width: 1200px) {
+  .singular.page .hentry {
+    padding: 2rem !important;
+  }
+  .tabbed_content {
+    padding: 0 2rem;
+  }
+  
+}
 @media (min-width: 769px) {
-	.singular.page .hentry {
-		padding: 2rem !important;
-	}
-	.tabbed_content {
-		padding: 0 2rem;
-	}
+  
+  
   .ss-left,
   .ss-right {
     flex: 1 1 45%;

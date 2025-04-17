@@ -25,7 +25,6 @@ section#banner_cont .awards h1 {
 }
 .description-wrap {
   width: 100%;
-  padding: 1rem;
 }
 #profile {
   width: 100%;
@@ -124,7 +123,8 @@ section#contact {
   overflow: hidden !important;
 }
 article.awd_main h1 {
-  max-width: 600px;
+  font-weight: 200 !important;
+  max-width: 600px !important;
 }
 section#h_contact article.cnt_adrs {
   display: flex !important;
@@ -155,7 +155,7 @@ article.abt_main h2 {
 .footer_part {
   padding: unset !important;
   padding: 10px 16px !important;
-  max-width: 950px !important;
+  max-width: 1200px !important;
 }
 aside.cont_form ul li label {
   width: 100% !important;
@@ -177,9 +177,111 @@ aside.cont_form ul li textarea {
 aside.cont_form ul li textarea {
   margin-bottom: 1.5rem !important;
 }
+section#about_part article.abt_main,
+section#award_part article.awd_main {
+  max-width: 1200px !important;
+  margin: auto !important;
+}
+section#banner_cont section#awards_part {
+  width: unset !important;
+  max-width: 1200px !important;
+}
+section#h_contact article.flw_part {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: end;
+}
+section#h_contact h1.frd {
+  width: 50% !important;
+}
+section#h_contact h1.dwd {
+  width: 50% !important;
+  text-align: end !important;
+}
+section#banner_cont {
+  height: 800px !important;
+}
+.description-wrap {
+  max-width: unset !important;
+  max-width: 1200px !important;
+}
+.singular.page .hentry {
+  margin-bottom: 4.5rem !important;
+}
+.tabbed_content .slide_content {
+  padding: 32px 0 !important;
+}
+.singular.page .hentry {
+  padding: 0 !important;
+}
 
+/* Text responsiveness */
+.textwidget,
+.textwidget p {
+  font-size: clamp(16px, 1vw, 18px) !important;
+}
+.description-wrap p {
+  font-size: clamp(16px, 1vw, 18px) !important;
+} /*home*/
+.entry-content p {
+  font-size: clamp(16px, 1vw, 18px) !important;
+} /*bio*/
+
+@media (max-width: 480px) {
+}
+@media (min-width: 768px) {
+  #access a {
+    font-size: 14px !important;
+  }
+}
+@media (max-width: 768px) {
+  .description-wrap p {
+    font-size: clamp(14px, 2.5vw, 16px) !important;
+  }
+  .textwidget,
+  .textwidget p {
+    font-size: clamp(14px, 1vw, 16px) !important;
+  }
+  .entry-content p {
+    font-size: clamp(14px, 2.5vw, 16px) !important;
+  }
+}
+@media (min-width: 991px) {
+  #access a {
+    font-size: 16px !important;
+  }
+}
+
+@media (min-width: 480px) {
+  article.abt_main p,
+  article.awd_main p {
+    text-align: right !important;
+  }
+}
+@media (min-width: 1200px) {
+  section#h_contact article#h_cnt {
+    padding: 0 !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  .description-wrap {
+    padding: 2rem !important;
+  }
+  section#h_contact article#h_cnt {
+    padding: 2rem !important;
+  }
+}
+@media (max-width: 165px) {
+  section#h_contact h1.dwd a {
+    display: none !important;
+  }
+}
+@media (max-width: 320px) {
+}
 @media (max-width: 467px) {
-  img[class*="align"], img[class*="wp-image-"], #content .gallery .gallery-icon img {
+  img[class*="align"],
+  img[class*="wp-image-"],
+  #content .gallery .gallery-icon img {
     float: right !important;
   }
 }
@@ -223,6 +325,7 @@ aside.cont_form ul li textarea {
     background: url(images/joby_photo.png) no-repeat !important;
     background-size: 170px auto !important;
     background-position: center !important;
+    width: unset !important;
   }
   section#banner_cont .awds_btm1 {
     bottom: 178px !important;
@@ -237,8 +340,11 @@ aside.cont_form ul li textarea {
   }
 }
 @media (max-width: 768px) {
+  .description-wrap {
+    padding: 1rem !important;
+  }
   section#contact aside.cont_form {
-    border:  none !important;
+    border: none !important;
   }
   section#banner_cont section#contact {
     display: flex;
@@ -302,7 +408,7 @@ aside.cont_form ul li textarea {
 }
 @media (max-width: 768px) {
   section#banner_cont {
-    height: 800px !important;
+    margin: 2rem 0 !important;
   }
   section#banner_cont article.banner_strip {
     bottom: 0px !important;
@@ -503,7 +609,10 @@ aside.cont_form ul li textarea {
 }
 @media (min-width: 769px) {
   section#about_part {
-      padding: 2rem !important;
+    padding: 2rem !important;
+  }
+  section#banner_cont {
+    height: 630px !important;
   }
 }
 
